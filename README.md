@@ -57,21 +57,20 @@ This site was developed as a front-end practice exercise, focusing on **responsi
 ## 🚀 How to View Locally
 
 1. Clone the repository:
-   ```bash
    git clone https://github.com/thiagosilvaqa93/silva-cafe.git
 
 2. Navigate into the folder:
-cd silva-cafe
+   cd silva-cafe
 
 3. Open the index.html file in your browser:
-You can double-click the file
-Or use a local server like Live Server in VS Code
+   You can double-click the file
+   Or use a local server like Live Server in VS Code
 
 📍 Location
-The site includes an embedded Google Map pointing to a fictional location near the Brandenburg Gate (Brandenburger Tor) in Berlin, Germany.
+   The site includes an embedded Google Map pointing to a fictional location near the Brandenburg Gate (Brandenburger Tor) in Berlin, Germany.
 
 👨‍💻 Author
-Developed by Thiago Silva
+   Developed by Thiago Silva
 
 📄 License
-This project is open for educational use and can be freely adapted or used as a learning base.
+   This project is open for educational use and can be freely adapted or used as a learning base.
