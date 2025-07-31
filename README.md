@@ -8,14 +8,7 @@ This site was developed as a front-end practice exercise, focusing on **responsi
 
 ## 🌐 Live Demo
 
-> Coming soon: [https://thiagosilvaqa93.github.io/silva-cafe](https://thiagosilvaqa93.github.io/silva-cafe)  
-> *(Update this link once you publish via GitHub Pages)*
-
----
-
-## 📸 Screenshots
-
-> *(You can add screenshots here to showcase the layout once it's published.)*
+> https://thiagosilvaqa93.github.io/Silva-s-Cafeteria/
 
 ---
 
