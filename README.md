@@ -34,21 +34,22 @@ This site was developed as a front-end practice exercise, focusing on **responsi
 ---
 
 ## 📁 Project Structure
+```bash
 /
 ├── index.html
 ├── styles.css
-├── /imagens
-│ ├── logo.png
-│ ├── about-img.jpg
-│ ├── menu-1.png
-│ ├── menu-2.png
-│ ├── menu-3.png
-│ ├── menu-4.png
-│ ├── menu-5.png
-│ ├── quote-img.png
-│ ├── pic-1.png
-│ ├── pic-2.png
-│ ├── pic-3.png
+├── imagens
+│   ├── logo.png
+│   ├── about-img.jpg
+│   ├── menu-1.png
+│   ├── menu-2.png
+│   ├── menu-3.png
+│   ├── menu-4.png
+│   ├── menu-5.png
+│   ├── quote-img.png
+│   ├── pic-1.png
+│   ├── pic-2.png
+│   └── pic-3.png
 
 
 ---
