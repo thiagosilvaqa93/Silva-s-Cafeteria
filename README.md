@@ -43,7 +43,6 @@ This site was developed as a front-end practice exercise, focusing on **responsi
 ## 📁 Project Structure
 /
 ├── index.html
-
 ├── styles.css
 ├── /imagens
 │ ├── logo.png
