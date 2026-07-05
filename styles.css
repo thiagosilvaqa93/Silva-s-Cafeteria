@@ -8,16 +8,14 @@
     --border: 0.1rem solid rgba(255, 255, 255, 0.2);
 }
 
-/* RESET MELHORADO */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
+    font-family: "Roboto", sans-serif;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0.2s linear;
-    font-family: "Roboto", sans-serif;
+    transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -26,13 +24,29 @@ body {
     overflow-x: hidden;
 }
 
+/* =========================
+   GLOBAL SECTIONS
+========================= */
 section {
     padding: 6rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* HEADER */
+.title {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: var(--main-color);
+}
+
+.title span {
+    color: var(--text);
+}
+
+/* =========================
+   HEADER
+========================= */
 .header {
     position: fixed;
     top: 0;
@@ -54,242 +68,203 @@ section {
     margin: 0 1rem;
     font-size: 1.8rem;
     color: var(--text);
-    cursor: pointer;
 }
 
 .navbar a:hover {
     color: var(--main-color);
-    border-bottom: 0.1rem solid var(--main-color);
-    padding-bottom: 0.5rem;
 }
 
-/* ICONS */
 .icons img {
-    margin: 0 1rem;
-    cursor: pointer;
     width: 2.5rem;
     height: 2.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
 }
 
 .icons img:hover {
     transform: scale(1.1);
 }
 
-/* BUTTON */
+/* =========================
+   BUTTON
+========================= */
 .btn {
-    background: var(--main-color);
-    color: var(--text);
-    padding: 1rem 3rem;
-    font-size: 1.6rem;
-    cursor: pointer;
-    margin-top: 1.5rem;
     display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    color: var(--text);
+    background: var(--main-color);
     border-radius: 0.5rem;
 }
 
 .btn:hover {
-    letter-spacing: 0.1rem;
     transform: translateY(-2px);
+    letter-spacing: 0.1rem;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .home-container {
-    background: url("./imagens/home-img.jpg") no-repeat center center/cover;
     min-height: 100vh;
-}
-
-.home-container section {
+    background: url("./imagens/home-img.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
-    min-height: 100vh;
 }
 
-.content {
+.home-container .content {
     max-width: 60rem;
 }
 
-.content h3 {
-    color: var(--text);
+.home-container h3 {
     font-size: 5rem;
+    color: var(--text);
 }
 
-.content p {
-    color: var(--text);
+.home-container p {
     font-size: 1.8rem;
-    font-weight: 300;
-    line-height: 1.8;
-    padding: 1rem 0;
-}
-
-/* TITLE */
-.title {
-    font-size: 4rem;
-    color: var(--main-color);
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.title span {
     color: var(--text);
+    line-height: 1.8;
+    margin: 1rem 0;
 }
 
-/* ABOUT */
+/* =========================
+   ABOUT
+========================= */
 .about .row {
     display: flex;
     align-items: center;
-    background-color: var(--black);
     gap: 2rem;
     flex-wrap: wrap;
+    background-color: var(--black);
     border-radius: 1rem;
     padding: 2rem;
 }
 
-.about .row .container-image img {
+.about .container-image {
+    flex: 1 1 40rem;
+}
+
+.about .container-image img {
     width: 100%;
     border-radius: 1rem;
 }
 
-.about .row .content {
-    flex: 1;
-    padding: 2rem;
+.about .content {
+    flex: 1 1 40rem;
 }
 
-.about .row .content h3 {
-    font-size: 3rem;
-    color: var(--text);
+.about h3 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
 }
 
-.about .row .content p {
+.about p {
     font-size: 1.6rem;
-    color: var(--text);
     line-height: 1.8;
 }
 
-/* MENU */
+/* =========================
+   MENU
+========================= */
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2rem;
 }
 
-.menu .box-container .box {
-    text-align: center;
-    border: var(--border);
-    padding: 3rem;
-    cursor: pointer;
-    border-radius: 1rem;
+.menu .box {
     background: transparent;
+    border: var(--border);
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
 }
 
-.menu .box-container .box img {
+.menu .box img {
     height: 10rem;
     object-fit: contain;
 }
 
-.menu .box-container .box h3 {
-    color: var(--text);
+.menu .box h3 {
     font-size: 2rem;
-    padding: 1rem 0;
+    margin: 1rem 0;
 }
 
-.menu .box-container .box .price {
-    color: var(--text);
-    font-size: 2.2rem;
+.menu .price {
+    font-size: 2rem;
 }
 
-.menu .box-container .box .price span {
-    font-size: 1.5rem;
+.menu .price span {
     text-decoration: line-through;
+    font-size: 1.4rem;
     margin-left: 1rem;
     opacity: 0.7;
 }
 
-.menu .box-container .box:hover {
-    background-color: var(--text);
-}
-
-.menu .box-container .box:hover > * {
+.menu .box:hover {
+    background: var(--text);
     color: var(--black);
 }
 
-/* REVIEW */
+/* =========================
+   REVIEWS
+========================= */
 .review .box-container {
     display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.review .box-container .box {
-    border: var(--border);
-    text-align: center;
-    padding: 3rem 2rem;
+.review .box {
     width: 30rem;
-    background-color: var(--black);
+    background: var(--black);
     border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
 }
 
-.review .box-container .box p {
+.review p {
     font-size: 1.5rem;
-    color: var(--text);
     line-height: 1.8;
-    font-weight: 300;
 }
 
-.review .box-container .box h3 {
-    color: var(--text);
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.review .box-container .box .user {
-    height: 7rem;
+.review .user {
     width: 7rem;
+    height: 7rem;
     border-radius: 50%;
-    object-fit: cover;
     margin-top: 1rem;
 }
 
-/* STARS */
-.stars img {
-    width: 2rem;
-    margin: 0 0.2rem;
-}
-
-/* MAP */
-.address {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* =========================
+   MAP
+========================= */
 .address iframe {
     width: 100%;
     max-width: 900px;
     height: 450px;
     border: none;
     border-radius: 1rem;
+    display: block;
+    margin: 0 auto;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 .footer {
     text-align: center;
-    padding: 2rem 0;
-}
-
-.footer .share {
-    padding: 1rem 0;
+    padding: 3rem 0;
 }
 
 .footer .share img {
+    width: 3rem;
     margin: 0.5rem;
     cursor: pointer;
-    padding: 1rem;
-    border-radius: 50%;
-    transition: 0.3s ease;
 }
 
 .footer .share img:hover {
-    background-color: var(--main-color);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
