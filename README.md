@@ -8,7 +8,7 @@ This project was developed as a front-end practice exercise, with a focus on **r
 
 ## 🌐 Live Demo
 
-👉 https://thiagosilvaqa93.github.io/Silva-cafe/
+👉 https://thiagosilvaqa93.github.io/Silva-Cafe/
 
 ---
 
